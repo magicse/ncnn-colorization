@@ -43,7 +43,7 @@ int main(int argc, char** argv)
     }
 
     char *argv_my[] = {"bw_imge", in_fname, NULL };
-    main_test(2, argv_my);
+    main_colorization(2, argv_my);
 printf("\nFinal");
 return 0;
 }
