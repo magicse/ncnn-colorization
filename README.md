@@ -9,8 +9,8 @@ Download model [ncnn_v1.bin](https://drive.google.com/file/d/1YWjVYNjwQM64W656Bz
 
 ## Prerequisites<br>
 * Linux or Windows<br>
-* Prebuilded NCNN lib<br>
-* Prebuilded OpenCV library
+* Prebuilded NCNN lib with headers<br>
+* Prebuilded OpenCV library with headers
 * CPU or NVIDIA GPU + Vulkan<br>
 
 Based on<br>
