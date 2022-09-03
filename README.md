@@ -13,7 +13,13 @@ Download model [ncnn_v1.bin](https://drive.google.com/file/d/1YWjVYNjwQM64W656Bz
 * Prebuilded OpenCV library with headers
 * CPU or NVIDIA GPU + Vulkan<br>
 
-Based on<br>
+## Usage:
+```
+COLOR_GAN -i 17.jpg
+```
+
+## Based on<br>
 [richzhang/colorization](https://github.com/richzhang/colorization)<br>
 [Colorful Image Colorization](http://richzhang.github.io/colorization/)
+
 
