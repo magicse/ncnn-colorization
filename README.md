@@ -5,6 +5,12 @@ Download model [ncnn_v1.bin](https://drive.google.com/file/d/1YWjVYNjwQM64W656Bz
 
 <img src="https://user-images.githubusercontent.com/13585785/188285309-4a7cbf2d-5094-4ac5-a0e7-3dc333f599bd.jpg" width="148"> <img src="https://user-images.githubusercontent.com/13585785/188285301-b4e65224-dcc4-470e-8907-656dc2af5cae.png" width="148">
 
+## Prerequisites<br>
+* Linux or Windows<br>
+* Prebuilded NCNN lib<br>
+* Prebuilded OpenCV library
+* CPU or NVIDIA GPU + Vulkan<br>
+
 Based on<br>
 [richzhang/colorization](https://github.com/richzhang/colorization)<br>
 [Colorful Image Colorization](http://richzhang.github.io/colorization/)
