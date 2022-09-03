@@ -18,9 +18,9 @@ static int colorization(const cv::Mat& bgr, const cv::Mat& out_image)
 {
   ncnn::Net net;
   net.opt.use_vulkan_compute = true;
-  if (scrfd.load_param("./models/ncnn_v1.param"))
+  if (net.load_param("./models/ncnn_v1.param"))
     exit(-1);
-  if (scrfd.load_model("./models/ncnn_v1.bin"))
+  if (net.load_model("./models/ncnn_v1.bin"))
     exit(-1);
   //fixed input size for the pretrained network
   const int W_in = 224;
