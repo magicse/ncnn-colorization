@@ -48,12 +48,6 @@ static int colorization(const cv::Mat& bgr, const cv::Mat& out_image)
   ncnn::Mat in_LAB_L(input_img.cols, input_img.rows, 1, (void*)input_img.data);
   in_LAB_L = in_LAB_L.clone();
   
-  //setup additional layers:
-  int sz[] = {2, 313, 1, 1};
-  const cv::Mat pts_in_hull(4, sz, CV_32F, hull_pts);
-  
-
-  
   //Set the temperature T for the annealed mean operation. Blob Trecip is the reciprocal of the temperature.
   //filled value = 6/ln(10) # 1/T, set annealing temperature 0.38
   ncnn::Mat in_Trecip(56, 56, 313);
