@@ -46,7 +46,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/ncnn/include/ncnn)
 link_directories(${CMAKE_CURRENT_SOURCE_DIR}/ncnn/lib)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/)
-add_executable(COLOR_GAN main.cpp face.cpp)
+add_executable(COLOR_GAN main.cpp colornet.cpp)
 target_link_libraries( COLOR_GAN ncnn ${OpenCV_LIBS})
 
 
