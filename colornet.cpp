@@ -105,8 +105,8 @@ int main_colorization(int argc, char** argv)
         fprintf(stderr, "cv::imread %s failed\n", imagepath);
         return -1;
     }
-
-    colorization(m, faceobjects);
+    cv::Mat out_image;
+    colorization(m, out_image);
 
     return 0;
 }
