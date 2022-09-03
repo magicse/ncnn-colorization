@@ -29,7 +29,7 @@ static int colorization(const cv::Mat& bgr, const cv::Mat& out_image)
   cv::Mat Base_img, lab, L, input_img;
   Base_img = bgr.clone();
   
-  //normilize levels
+  //normalize levels
   Base_img.convertTo(Base_img, CV_32F, 1.0/255);
   
   //Convert BGR to LAB color space format
@@ -79,6 +79,7 @@ static int colorization(const cv::Mat& bgr, const cv::Mat& out_image)
   cv::Mat color, chn[] = {L, a, b};
   cv::merge(chn, 3, lab);
   cvtColor(lab, color, cv::COLOR_Lab2BGR);
+  //normalize values to 0->255
   color.convertTo(color, CV_8UC3, 255);
 
   imshow("color", color);
