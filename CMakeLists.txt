@@ -41,6 +41,7 @@ if (USE_OPEN_MP)
 	endif ()
 endif ()
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/ncnn/include/ncnn)
 link_directories(${CMAKE_CURRENT_SOURCE_DIR}/ncnn/lib)
